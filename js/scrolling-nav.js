@@ -26,4 +26,18 @@
     offset: 56
   });
 
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 56){
+        $('.navbar').css('background', 'white');
+        $('.navbar-brand').css('color', '#39BFBF');
+        $('.navbar-links').css('color', '#39BFBF');
+    } else{
+        $('.navbar').css('background', '#39BFBF');
+        $('.navbar-brand').css('color', 'white');
+        $('.navbar-links').css('color', 'white');
+    }
+  });
+  
+
 })(jQuery); // End of use strict
