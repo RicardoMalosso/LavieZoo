@@ -1,0 +1,74 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+.header {
+  margin: 50px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+
+.btn-laranja{
+  border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border: 0px solid #F29F05;
+  background: #F29F05;
+  color: #224F59; 
+  
+}
+
+.navbar-links{
+  border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border: 0px solid transparent;
+  background: transparent;
+  color: 224F59; 
+}
+
+.btn-azul{
+  border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border: 0px solid #224F59;
+  background: #224F59;
+  color: white; 
+}
+
+.navbar-nav > li{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.navbar-default {
+  background-color: white;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
+ .box-transparente{
+   background-color:rgba(white, 0.7);
+ }
+
+ .bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/img/doggo2.jpeg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
