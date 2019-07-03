@@ -1,0 +1,7 @@
+input {
+    text-align: center;
+    background-color:transparent !important;
+    border: 2px #000 !important;
+    border-style: none none solid none !important;
+    border-radius: 0px !important;
+}
