@@ -5,3 +5,9 @@ input {
     border-style: none none solid none !important;
     border-radius: 0px !important;
 }
+
+@media screen and (min-width: 600px) {
+    #maincontainer {
+        width: 75%;;
+    }
+  }
