@@ -39,5 +39,10 @@
     }
   });
   
+  window.onload = function() {
+    $('.navbar').css('background', 'white');
+    $('.navbar-brand').css('color', '#39BFBF');
+    $('.navbar-links').css('color', '#39BFBF');
+}
 
 })(jQuery); // End of use strict
