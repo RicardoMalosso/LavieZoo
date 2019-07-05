@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Lavie Zoo - Cuidado a um toque</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <script src="https://kit.fontawesome.com/0f03743da6.js"></script>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/cadastro.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">LavieZoo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label class="font-weight-bold"="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item nav-texto">
+            <a class="nav-link js-scroll-trigger navbar-links" href="#about">SOBRE</a>
+          </li>
+          <li class="nav-item nav-texto">
+            <a class="nav-link js-scroll-trigger navbar-links" href="#contato">AGENDAMENTO</a>
+          </li>
+          <li class="nav item">
+            <button class="btn btn-azul"> LOGIN</button>
+          </li>
+          <li class="nav item">
+            <button class="btn btn-laranja"> CADASTRE-SE</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body class="pt-5 bg text-white" style="margin-top:80px; background-color: #F3F3F3; background-image:none">
+
+      <form class="text-dark text-uppercase">
+        <div class="row">
+          
+        <div class="pt-5 container col-sm-8 mx-auto align-self-center align-items-center justify-content-center">
+          
+          
+            <div class="rounded px-2 pt-3 pb-5 align-items-center justify-content-center"
+            style="background-color: rgba(255, 255, 255, 0.85)">
+            <img class="" src="img/agencia_cadastro_ICONE.svg" style="
+            position:absolute;
+            top: 0;
+            left: 50%;
+            transform:translate(-50%,-25%);
+            "/>
+
+            <div class="mt-5 row form-group">
+              <h3 class="mt-5 mx-auto font-weight-bold text-center" style="color: #0C7C95">Cadastro Veterinário</h3>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-9 mx-auto text-center">
+                <label class="align-self-center font-weight-bold" for="inputNomeCompleto">Nome Completo</label>
+                <input type="text" class="form-control text-uppercase" id="inputNomeCompleto"
+                  placeholder="Digite o seu nome completo">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-9 mx-auto text-center">
+                <label class="align-self-center font-weight-bold" for="inputCRMV">CRMV</label>
+                <input type="text" class="form-control text-uppercase" id="inputCRMV"
+                  placeholder="Digite o CRMV">
+              </div>
+            </div>
+          </div> <!-- Fim da border transparente -->
+
+
+          <div class="pt-4 px-2 form-group row">
+            <div class="col-md-6 mx-auto ">
+              <label class="align-self-center font-weight-bold" for="inputDataDeNascimento">Data de Nascimento</label>
+              <input type="date" class="form-control text-uppercase text-left" id="inputDataDeNascimento"
+                placeholder="dd/mm/aaaa">
+            </div>
+
+            <div class="col-md-6 mx-auto ">
+              <label class="align-self-center font-weight-bold" for="inputEspecialidade">Especialidade</label>
+              <input type="text" class="form-control text-uppercase text-left" id="inputEspecialidade"
+                placeholder="Qual a sua Especialidade?">
+            </div>
+          </div>
+
+          <div class="px-2 form-group row">
+              <div class="col-md-6 mx-auto ">
+              <div class="pt-4 form-check form-check-inline">
+                <input class="form-check-input" type="radio" rname="inlineRadioOptions" id="inlineRadio1"
+                  value="Masculino">
+                <label class="form-check-label" for="inlineRadio1">Masculino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="Feminino">
+                <label class="form-check-label" for="inlineRadio2">Feminino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="NaoBinario">
+                <label class="form-check-label" for="inlineRadio3">Não Binário</label>
+              </div>
+            </div>
+
+            <div class="col-md-6 mx-auto ">
+              <label class="align-self-center font-weight-bold" for="inputCPF">CPF</label>
+              <input type="text" class="form-control text-uppercase text-left" id="inputCPF" placeholder="Digite o CPF">
+            </div>
+          </div>
+
+          <div class="px-2 form-group row">
+            <div class="col-md-6 mx-auto ">
+              <label class="align-self-center font-weight-bold" for="inputConveniado">Conveniado?</label>
+              <input type="text" class="form-control text-uppercase text-left" id="inputConveiado"
+                placeholder="Digite aqui">
+            </div>
+
+            <div class="col-md-6 mx-auto pt-5 ">
+              <button class="btn-azul"> Ainda não é conveniado? Conheça o nosso plano!</button>
+            </div>
+          </div>
+
+
+
+          <hr style="border-top: dotted 10px; color: #6EB1B9;" />
+
+          <div class="px-2 pt-4 form-group row">
+
+            <div class="col-md-6 mx-auto">
+                    <label class="align-self-center font-weight-bold" for="inputQualClinica">Trabalha em alguma clínica?</label>
+                    <input type="text" class="form-control text-uppercase text-left" id="inputQualClinica"
+                      placeholder="Qual? Digite aqui">
+                                
+            </div>
+            <div class="col-md-6 mx-auto pt-5 ">
+                    <button class="btn-azul"> Ainda não é conveniado? Conheça o nosso plano!</button>
+                  </div>
+            <div class="col-md-12 mx-auto ">
+              <label class="align-self-center font-weight-bold" for="inputEndereco">Endereço</label>
+              <input type="text" class="form-control text-uppercase text-left" id="inputEndereco"
+                placeholder="Digite o endereço da instituição">
+            </div>
+          </div>
+
+            <div class="px-2 form-group row">
+
+              <div class="col-md-2 mx-auto ">
+                <label class="align-self-center font-weight-bold" for="inputComplemento">Complemento</label>
+                <input type="text" class="form-control text-uppercase text-left" id="inputComplemento"
+                  placeholder="Digite Aqui">
+              </div>
+
+              <div class="col-md-4 mx-auto ">
+                <label class="align-self-center font-weight-bold" for="inputBairro">Bairro</label>
+                <input type="text" class="form-control text-uppercase text-left" id="inputBairro"
+                  placeholder="Digite Aqui">
+              </div>
+
+              <div class="col-md-4 mx-auto ">
+                <label class="align-self-center font-weight-bold" for="inputCidade">Cidade</label>
+                <input type="text" class="form-control text-uppercase text-left" id="inputCidade"
+                  placeholder="Digite Aqui">
+              </div>
+              <div class="col-md-2 mx-auto ">
+                <label class="align-self-center font-weight-bold" for="inputEstado">Estado</label>
+                <input type="text" class="form-control text-uppercase text-left" id="inputEstado" placeholder="SP">
+              </div>
+            </div>
+
+            
+          <div class="px-2 form-group row">
+              <div class="col-md-2 mx-auto ">
+                <label class="align-self-center font-weight-bold" for="inputCep">CEP</label>
+                <input type="text" class="form-control text-uppercase text-left" id="inputCep"
+                  placeholder="Digite Aqui">
+              </div>
+  
+              <div class="col-md-4 mx-auto ">
+                <label class="align-self-center font-weight-bold" for="inputCelular">Celular</label>
+                <input type="text" class="form-control text-uppercase text-left" id="inputCelular"
+                  placeholder="+55 (__) _____-____">
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+
+            <hr style="border-top: dotted 10px; color: #6EB1B9;" />
+
+            <div class="px-2 form-group row">
+                <div class="col-md-6 mx-auto ">
+                  <label class="align-self-center font-weight-bold" for="inputEmail">E-mail</label>
+                  <input type="email" class="form-control text-uppercase text-left" id="inputEmail"
+                    placeholder="Digite o seu e-mail">
+                </div>
+    
+                <div class="col-md-6 mx-auto ">
+                  <label class="align-self-center font-weight-bold" for="inputSenha">Senha</label>
+                  <input type="password" class="form-control text-uppercase text-left" id="inputSenha"
+                    placeholder="Digite a sua senha">
+                </div>
+              </div>
+            
+              <div class="px-2 form-group row">
+                  <div class="col-md-6 mx-auto ">
+                    <label class="align-self-center font-weight-bold" for="inputEmailConfirm">E-mail</label>
+                    <input type="email" class="form-control text-uppercase text-left" id="inputEmailConfirm"
+                      placeholder="Confirme o seu e-mail">
+                  </div>
+      
+                  <div class="col-md-6 mx-auto ">
+                    <label class="align-self-center font-weight-bold" for="inputSenhaConfirm">Senha</label>
+                    <input type="password" class="form-control text-uppercase text-left" id="inputSenhaConfirm"
+                      placeholder="Confirme a sua senha">
+                  </div>
+                </div>
+
+                <div class="px-2 form-group row pb-5">
+                  <div class="col-md-8">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="TermosECondicoes">
+                        <label class="form-check-label" for="TermosECondicoes">
+                          Li e concordo com os termos e condições do LavieZoo
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="SaberMais">
+                        <label  class="form-check-label" for="SaberMais">
+                          Para saber mais sobre como o LavieZoo coleta, processa, compartilha e protege seus dados pessoais, leia a Política de Privacidade do Laviezoo
+                        </label>
+                      </div>
+                      </div>
+                      <div class="col-md-4">
+                        <button class="h-75 w-75 btn btn-lg btn-warning text-white">Cadastrar</button>
+                      </div>
+                </div>
+                
+
+          </div>
+          
+        
+      </div>
+      </form>
+  </body>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-2 mx-auto">LavieZoo</div>
+        <div class="col-sm-2 mx-auto">
+          Endereço nº 123 <br />
+          Bela Vista - SP - Cep 00000-000 <br />
+          contato@laviezoo.com.br
+        </div>
+        <div class="col-sm-2 mx-auto">
+          2019 todos os direitos reservados
+        </div>
+      </div>
+      <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  rh
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jqu
+ery.easing.min.js"></script>
+  rh
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
