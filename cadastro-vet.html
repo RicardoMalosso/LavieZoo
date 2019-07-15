@@ -55,7 +55,7 @@
 
   <body class="pt-5 bg text-white" style="margin-top:80px; background-color: #F3F3F3; background-image:none">
 
-      <form class="text-dark text-uppercase">
+      <form class="text-dark text-uppercase needs-validation" novalidate>
         <div class="row">
           
         <div class="pt-5 container col-sm-8 mx-auto align-self-center align-items-center justify-content-center">
@@ -77,14 +77,14 @@
               <div class="col-md-9 mx-auto text-center">
                 <label class="align-self-center font-weight-bold" for="inputNomeCompleto">Nome Completo</label>
                 <input type="text" class="form-control text-uppercase" id="inputNomeCompleto"
-                  placeholder="Digite o seu nome completo">
+                  placeholder="Digite o seu nome completo" required>
               </div>
             </div>
             <div class="form-group row">
               <div class="col-md-9 mx-auto text-center">
                 <label class="align-self-center font-weight-bold" for="inputCRMV">CRMV</label>
                 <input type="text" class="form-control text-uppercase" id="inputCRMV"
-                  placeholder="Digite o CRMV">
+                  placeholder="Digite o CRMV" required pattern="^[0-9]*$">
               </div>
             </div>
           </div> <!-- Fim da border transparente -->
@@ -94,13 +94,13 @@
             <div class="col-md-6 mx-auto ">
               <label class="align-self-center font-weight-bold" for="inputDataDeNascimento">Data de Nascimento</label>
               <input type="date" class="form-control text-uppercase text-left" id="inputDataDeNascimento"
-                placeholder="dd/mm/aaaa">
+                placeholder="dd/mm/aaaa" required pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$">
             </div>
 
             <div class="col-md-6 mx-auto ">
               <label class="align-self-center font-weight-bold" for="inputEspecialidade">Especialidade</label>
               <input type="text" class="form-control text-uppercase text-left" id="inputEspecialidade"
-                placeholder="Qual a sua Especialidade?">
+                placeholder="Qual a sua Especialidade?" required>
             </div>
           </div>
 
@@ -108,7 +108,7 @@
               <div class="col-md-6 mx-auto ">
               <div class="pt-4 form-check form-check-inline">
                 <input class="form-check-input" type="radio" rname="inlineRadioOptions" id="inlineRadio1"
-                  value="Masculino">
+                  value="Masculino" required>
                 <label class="form-check-label" for="inlineRadio1">Masculino</label>
               </div>
               <div class="form-check form-check-inline">
@@ -125,7 +125,7 @@
 
             <div class="col-md-6 mx-auto ">
               <label class="align-self-center font-weight-bold" for="inputCPF">CPF</label>
-              <input type="text" class="form-control text-uppercase text-left" id="inputCPF" placeholder="Digite o CPF">
+              <input type="text" class="form-control text-uppercase text-left" id="inputCPF" placeholder="Digite o CPF" required pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})">
             </div>
           </div>
 
@@ -159,7 +159,7 @@
             <div class="col-md-12 mx-auto ">
               <label class="align-self-center font-weight-bold" for="inputEndereco">Endereço</label>
               <input type="text" class="form-control text-uppercase text-left" id="inputEndereco"
-                placeholder="Digite o endereço da instituição">
+                placeholder="Digite o endereço da instituição" required>
             </div>
           </div>
 
@@ -174,17 +174,17 @@
               <div class="col-md-4 mx-auto ">
                 <label class="align-self-center font-weight-bold" for="inputBairro">Bairro</label>
                 <input type="text" class="form-control text-uppercase text-left" id="inputBairro"
-                  placeholder="Digite Aqui">
+                  placeholder="Digite Aqui" required>
               </div>
 
               <div class="col-md-4 mx-auto ">
                 <label class="align-self-center font-weight-bold" for="inputCidade">Cidade</label>
                 <input type="text" class="form-control text-uppercase text-left" id="inputCidade"
-                  placeholder="Digite Aqui">
+                  placeholder="Digite Aqui" required>
               </div>
               <div class="col-md-2 mx-auto ">
                 <label class="align-self-center font-weight-bold" for="inputEstado">Estado</label>
-                <input type="text" class="form-control text-uppercase text-left" id="inputEstado" placeholder="SP">
+                <input type="text" class="form-control text-uppercase text-left" id="inputEstado" placeholder="SP" required>
               </div>
             </div>
 
@@ -193,13 +193,13 @@
               <div class="col-md-2 mx-auto ">
                 <label class="align-self-center font-weight-bold" for="inputCep">CEP</label>
                 <input type="text" class="form-control text-uppercase text-left" id="inputCep"
-                  placeholder="Digite Aqui">
+                  placeholder="Digite Aqui" required pattern="[0-9]{5}[\-]?[0-9]{3}">
               </div>
   
               <div class="col-md-4 mx-auto ">
                 <label class="align-self-center font-weight-bold" for="inputCelular">Celular</label>
                 <input type="text" class="form-control text-uppercase text-left" id="inputCelular"
-                  placeholder="+55 (__) _____-____">
+                  placeholder="(__) _____-____" required pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$">
               </div>
               <div class="col-md-6"></div>
             </div>
@@ -210,34 +210,38 @@
                 <div class="col-md-6 mx-auto ">
                   <label class="align-self-center font-weight-bold" for="inputEmail">E-mail</label>
                   <input type="email" class="form-control text-uppercase text-left" id="inputEmail"
-                    placeholder="Digite o seu e-mail">
+                    placeholder="Digite o seu e-mail"
+                    onblur="camposIguais(document.getElementById('inputEmailConfirm'), this)">
                 </div>
     
                 <div class="col-md-6 mx-auto ">
                   <label class="align-self-center font-weight-bold" for="inputSenha">Senha</label>
                   <input type="password" class="form-control text-uppercase text-left" id="inputSenha"
-                    placeholder="Digite a sua senha">
+                    placeholder="Digite a sua senha"
+                    onblur="camposIguais(document.getElementById('inputSenhaConfirm'), this)">
                 </div>
               </div>
             
               <div class="px-2 form-group row">
                   <div class="col-md-6 mx-auto ">
-                    <label class="align-self-center font-weight-bold" for="inputEmailConfirm">E-mail</label>
+                    <label class="align-self-center font-weight-bold" for="inputEmailConfirm">Confirme o seu E-mail</label>
                     <input type="email" class="form-control text-uppercase text-left" id="inputEmailConfirm"
-                      placeholder="Confirme o seu e-mail">
+                      placeholder="Confirme o seu e-mail"
+                      onblur="camposIguais(document.getElementById('inputEmail'), this)">
                   </div>
       
                   <div class="col-md-6 mx-auto ">
-                    <label class="align-self-center font-weight-bold" for="inputSenhaConfirm">Senha</label>
+                    <label class="align-self-center font-weight-bold" for="inputSenhaConfirm">Confirme a sua Senha</label>
                     <input type="password" class="form-control text-uppercase text-left" id="inputSenhaConfirm"
-                      placeholder="Confirme a sua senha">
+                      placeholder="Confirme a sua senha"
+                      onblur="camposIguais(document.getElementById('inputSenha'), this)">
                   </div>
                 </div>
 
                 <div class="px-2 form-group row pb-5">
-                  <div class="col-md-8">
+                  <div class="col-md-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="TermosECondicoes">
+                        <input class="form-check-input" type="checkbox" id="TermosECondicoes" required>
                         <label class="form-check-label" for="TermosECondicoes">
                           Li e concordo com os termos e condições do LavieZoo
                         </label>
@@ -249,8 +253,8 @@
                         </label>
                       </div>
                       </div>
-                      <div class="col-md-4">
-                        <button class="h-75 w-75 btn btn-lg btn-warning text-white">Cadastrar</button>
+                      <div class="col-md-12">
+                        <button class="btn btn-lg btn-warning text-white">Cadastrar</button>
                       </div>
                 </div>
                 
@@ -282,6 +286,39 @@
       </div>
       <!-- /.container -->
   </footer>
+
+
+<!-- Scripts de validação de formulário-->
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
+  
+  <script>        
+    function camposIguais(p1, p2) {
+    if (p1.value != p2.value || p1.value == '' || p2.value == '') {
+        p2.setCustomValidity('Campos estão diferentes');
+    } else {
+      input.setCustomValidity('');
+    }
+    }
+    </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
